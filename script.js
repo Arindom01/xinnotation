@@ -374,15 +374,15 @@
   }
 
   // --- Logo Animation on Load ---
-  const logoX = document.querySelector('.nav-logo .logo-x');
-  if (logoX) {
-    logoX.style.opacity = '0';
-    logoX.style.transform = 'rotate(-180deg) scale(0)';
-    logoX.style.transition = 'all 0.8s cubic-bezier(0.34, 1.56, 0.64, 1)';
+  const logoImg = document.querySelector('.nav-logo img');
+  if (logoImg) {
+    logoImg.style.opacity = '0';
+    logoImg.style.transform = 'scale(0.5)';
+    logoImg.style.transition = 'all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        logoX.style.opacity = '1';
-        logoX.style.transform = 'rotate(0) scale(1)';
+        logoImg.style.opacity = '1';
+        logoImg.style.transform = 'scale(1)';
       });
     });
   }
