@@ -359,9 +359,13 @@
         const scroll = window.scrollY;
         if (scroll < window.innerHeight) {
           const content = hero.querySelector('.hero-content');
+          const bg = hero.querySelector('.hero-bg');
           if (content) {
-            content.style.transform = `translateY(${scroll * 0.15}px)`;
-            content.style.opacity = 1 - scroll / (window.innerHeight * 0.8);
+            content.style.transform = `translateY(${scroll * 0.12}px)`;
+            content.style.opacity = 1 - scroll / (window.innerHeight * 0.9);
+          }
+          if (bg) {
+            bg.style.transform = `translateY(${scroll * 0.05}px)`;
           }
         }
       },
