@@ -1,0 +1,5 @@
+# Redirect www to non-www (configure in Cloudflare DNS as well)
+# https://www.x-innotation.com/* https://x-innotation.com/:splat 301
+
+# SPA fallback (not needed for static site, but kept for reference)
+# /*  /index.html  200

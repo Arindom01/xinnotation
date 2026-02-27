@@ -1,0 +1,17 @@
+name = "x-innotation-api"
+main = "functions/api/submit-lead.js"
+compatibility_date = "2024-12-01"
+
+# KV Namespace for lead storage
+[[kv_namespaces]]
+binding = "LEADS_KV"
+id = "your-kv-namespace-id-here"
+preview_id = "your-preview-kv-namespace-id-here"
+
+# Environment variables (set via Cloudflare dashboard or wrangler secret)
+# NOTIFICATION_EMAIL = "hello@x-innotation.com"
+# SENDGRID_API_KEY = "your-sendgrid-api-key"
+
+[vars]
+ENVIRONMENT = "production"
+NOTIFICATION_EMAIL = "hello@x-innotation.com"
