@@ -72,7 +72,7 @@
         }
       });
     },
-    { threshold: 0.3, rootMargin: '-72px 0px -50% 0px' }
+    { threshold: 0.3, rootMargin: '-84px 0px -50% 0px' }
   );
 
   sections.forEach((section) => sectionObserver.observe(section));
